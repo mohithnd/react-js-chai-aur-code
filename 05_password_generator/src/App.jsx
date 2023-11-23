@@ -32,7 +32,7 @@ function App() {
   }, [password]);
   useEffect(() => {
     passwordGenerator();
-  }, [length, numberAllowed, characterAllowed]);
+  }, [length, numberAllowed, characterAllowed, passwordGenerator]);
   return (
     <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 my-8 text-orange-500 bg-gray-800">
       <h1 className="text-white text-center my-3">Password Generator</h1>
